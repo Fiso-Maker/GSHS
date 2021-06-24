@@ -27,4 +27,10 @@ public class SceneLoader : MonoBehaviour
     {
         load("InGame_1");
     }
+    public void MovetoMain()
+    {
+        var SaveMenu = GameObject.Find("SaveMenu");
+        Destroy(SaveMenu);
+        load("Start");
+    }
 }

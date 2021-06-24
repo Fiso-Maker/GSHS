@@ -21,7 +21,7 @@ namespace Fungus
         [SerializeField] protected bool loadOnStart = true;
 
         [Tooltip("Automatically save game to disk after each Save Point command executes. This also disables the Save and Load menu buttons.")]
-        [SerializeField] protected bool autoSave = false;
+        [SerializeField] protected bool autoSave = true;
 
         [Tooltip("Delete the save game data from disk when player restarts the game. Useful for testing, but best switched off for release builds.")]
         [SerializeField] protected bool restartDeletesSave = false;
@@ -120,6 +120,8 @@ namespace Fungus
             {
                 saveButton.gameObject.SetActive(showSaveAndLoad);
                 loadButton.gameObject.SetActive(showSaveAndLoad);
+                rewindButton.gameObject.SetActive(showSaveAndLoad);
+                forwardButton.gameObject.SetActive(showSaveAndLoad);
             }
  
             if (showSaveAndLoad)

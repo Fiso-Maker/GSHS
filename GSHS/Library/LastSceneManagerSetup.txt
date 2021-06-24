@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/[CGT] Fungus Slot-based Save System/Scenes/NewSaveSystemSandbox.unity
+- path: Assets/Scenes/InGame_1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

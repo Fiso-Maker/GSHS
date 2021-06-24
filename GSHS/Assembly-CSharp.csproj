@@ -36,37 +36,38 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\SceneLoader.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\VariableContainerTypes.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\LoaderTypes\TransformVarLoader.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\LoaderTypes\FlowchartLoader.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\LoaderTypes\SaveLoader.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaverTypes\FlowchartSaver.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\ReadersAndWriters\SaveWriter.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\StandardFormat.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Interfaces\ISaveCreator.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataItem.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\UI\SaveMenu.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\UI\SaveSlotManager.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataTypes\SaveData.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\ReadersAndWriters\SaveDiskAccessor.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\ProgressMarker.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Interfaces\ISaveLoader.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\SaveDataLoaded.cs" />
      <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataTypes\BlockData.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\ReadWriteEncoding.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\UI\SaveSlot.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\ReadersAndWriters\SaveDiskAccessor.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\ReadersAndWriters\SaveReader.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\ReadersAndWriters\SaveWriter.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\VariableContainerTypes.cs" />
      <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataTypes\TransformVarData.cs" />
      <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\LoaderTypes\GameLoader.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\SaveSystemSignals.cs" />
      <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaverTypes\TransformVarSaver.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataTypes\GameSaveData.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveManager.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaverTypes\GameSaver.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\ReadersAndWriters\SaveReader.cs" />
      <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\FlowchartExtensions.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaverTypes\DataSaver.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataTypes\GameSaveData.cs" />
      <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataTypes\FlowchartData.cs" />
-     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\SaveDataLoaded.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataItem.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\UI\SaveSlot.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaverTypes\FlowchartSaver.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\UI\SaveMenu.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Interfaces\ISaveLoader.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\LoaderTypes\FlowchartLoader.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Interfaces\ISaveCreator.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\ReadWriteEncoding.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\UI\SaveSlotManager.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\ProgressMarker.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\Utils\SaveSystemSignals.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveManager.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\LoaderTypes\TransformVarLoader.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaveDataTypes\SaveData.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\LoaderTypes\SaveLoader.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaverTypes\DataSaver.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\SaverTypes\GameSaver.cs" />
+     <Compile Include="Assets\[CGT] Fungus Slot-based Save System\Scripts\StandardFormat.cs" />
+     <Compile Include="Assets\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\Scripts\UI_Manager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
