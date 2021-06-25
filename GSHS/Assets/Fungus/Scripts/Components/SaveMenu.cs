@@ -318,6 +318,11 @@ namespace Fungus
             SaveManagerSignals.DoSaveReset();
             SceneManager.LoadScene(saveManager.StartScene);
         }
+        public void MovetoMain(){
+            this.gameObject.transform.Find("Buttons").transform.Find("MenuButton").gameObject.SetActive(false);
+            SceneManager.LoadScene("Start");
+            ToggleSaveMenu();
+        }
 
         #endregion
     }
