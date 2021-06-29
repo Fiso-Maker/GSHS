@@ -58,7 +58,7 @@ namespace Fungus
 
         protected static SaveMenu instance;
 
-        protected static bool hasLoadedOnStart = false;
+        public bool hasLoadedOnStart = false;
 
         protected virtual void Awake()
         {
@@ -85,6 +85,12 @@ namespace Fungus
 
         protected virtual void Start()
         {
+            hasLoadedOnStart = true;
+            if (SceneManager.GetActiveScene().name == "Start")
+            {
+                transform.Find("Buttons").Find("MenuButton").gameObject.SetActive(false);
+            }
+            
             if (!saveMenuActive)
             {
                 saveMenuGroup.alpha = 0f;
@@ -98,6 +104,21 @@ namespace Fungus
                 saveManager.StartScene = SceneManager.GetActiveScene().name;
             }
 
+            // if (loadOnStart && !hasLoadedOnStart)
+            // {
+            //     hasLoadedOnStart = true;
+
+            //     if (saveManager.SaveDataExists(saveDataKey))
+            //     {
+            //         saveManager.Load(saveDataKey);
+            //     }
+            // }
+        }
+
+        protected virtual void Update()
+        {
+            var saveManager = FungusManager.Instance.SaveManager;
+
             if (loadOnStart && !hasLoadedOnStart)
             {
                 hasLoadedOnStart = true;
@@ -107,13 +128,8 @@ namespace Fungus
                     saveManager.Load(saveDataKey);
                 }
             }
-        }
-
-        protected virtual void Update()
-        {
-            var saveManager = FungusManager.Instance.SaveManager;
-
             // Hide the Save and Load buttons if autosave is on
+            
 
             bool showSaveAndLoad = !autoSave;
             if (saveButton.IsActive() != showSaveAndLoad)
@@ -319,6 +335,14 @@ namespace Fungus
             SceneManager.LoadScene(saveManager.StartScene);
         }
         public void MovetoMain(){
+            var saveManager = FungusManager.Instance.SaveManager;
+
+            if (saveManager.NumSavePoints > 0)
+            {
+                PlayClickSound();
+                saveManager.Save(saveDataKey);
+            }
+
             this.gameObject.transform.Find("Buttons").transform.Find("MenuButton").gameObject.SetActive(false);
             SceneManager.LoadScene("Start");
             ToggleSaveMenu();

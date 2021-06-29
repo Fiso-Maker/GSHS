@@ -65,7 +65,6 @@ namespace Fungus
 
         // This property is true when the writer is writing text or waiting (i.e. still processing tokens)
         protected bool isWriting;
-
         protected float currentWritingSpeed;
         protected float currentPunctuationPause;
         protected TextAdapter textAdapter = new TextAdapter();
