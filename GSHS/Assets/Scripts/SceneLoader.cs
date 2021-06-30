@@ -50,7 +50,6 @@ public class SceneLoader : MonoBehaviour
             Debug.Log("아직 버튼이 생성되지 않았습니다");
         }
         finally{
-            Debug.Log("저장 데이터가 없습니다. 첫 시작");
             load("InGame_1");
         }
     }
