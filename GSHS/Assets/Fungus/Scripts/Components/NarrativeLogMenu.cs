@@ -113,7 +113,7 @@ namespace Fungus
             UpdateNarrativeLogText();
         }
 
-        protected virtual void OnSaveReset()
+        public virtual void OnSaveReset()
         {
             FungusManager.Instance.NarrativeLog.Clear();
             UpdateNarrativeLogText();

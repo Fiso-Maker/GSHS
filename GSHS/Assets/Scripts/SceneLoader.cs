@@ -30,6 +30,9 @@ public class SceneLoader : MonoBehaviour
             Savemenu.transform.Find("Buttons").Find("MenuButton").gameObject.SetActive(true);
             SaveMenu a = Savemenu.gameObject.GetComponent<SaveMenu>();
             a.hasLoadedOnStart = true;
+
+            NarrativeLogMenu b = Savemenu.gameObject.GetComponent<NarrativeLogMenu>();
+            b.OnSaveReset();
         }
         catch (NullReferenceException){
             Debug.Log("아직 버튼이 생성되지 않았습니다");

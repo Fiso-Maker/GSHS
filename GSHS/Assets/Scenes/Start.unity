@@ -206,7 +206,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2094100051}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.6263855
+  m_Size: 0.6488172
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3823,7 +3823,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Load Game
 --- !u!222 &1636633200
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3902,7 +3902,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: New Start
 --- !u!222 &1658068672
 CanvasRenderer:
   m_ObjectHideFlags: 0
