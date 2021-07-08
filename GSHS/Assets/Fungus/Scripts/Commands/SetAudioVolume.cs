@@ -16,7 +16,7 @@ namespace Fungus
     {
         [Range(0,1)]
         [Tooltip("Global volume level for audio played using Play Music and Play Sound")]
-        [SerializeField] protected float volume = 1f;
+        [SerializeField] public float volume = 1f;  
 
         [Range(0,30)]
         [Tooltip("Time to fade between current volume level and target volume level.")]
@@ -30,6 +30,8 @@ namespace Fungus
         public override void OnEnter()
         {
             var musicManager = FungusManager.Instance.MusicManager;
+
+            volume = PlayerPrefs.GetFloat("Sound_Volume_Pref");
 
             musicManager.SetAudioVolume(volume, fadeDuration, () => {
                 if (waitUntilFinished)

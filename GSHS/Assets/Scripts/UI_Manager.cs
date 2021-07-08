@@ -8,9 +8,7 @@ using Fungus;
 public class UI_Manager : MonoBehaviour
 {
     public static UI_Manager instance;
-
-    public GameObject New_Start_Warning_Panel;
-    public GameObject Option_UI_Panel;
+    GameObject Main_UI;
     
     void Awake(){
         if(instance == null)
@@ -25,8 +23,9 @@ public class UI_Manager : MonoBehaviour
     }
     void Start()
     {
-        New_Start_Warning_Panel.SetActive(false);
-        Option_UI_Panel.SetActive(false);
+        Main_UI = GameObject.Find("Main_UI");
+        Main_UI.transform.Find("New_Start_Panel").gameObject.SetActive(false);
+        Main_UI.transform.Find("Option_Window").gameObject.SetActive(false);
     }
     public void New_Start_Btn_Click()
     {
@@ -74,7 +73,6 @@ public class UI_Manager : MonoBehaviour
     {
         var Main_UI = GameObject.Find("Main_UI");
         Main_UI.transform.Find("New_Start_Panel").gameObject.SetActive(true);
-
         Main_UI.transform.Find("Option_Window").gameObject.SetActive(false);
     }
     public void New_Start_Cancel()
@@ -86,7 +84,6 @@ public class UI_Manager : MonoBehaviour
     {
         var Main_UI = GameObject.Find("Main_UI");
         Main_UI.transform.Find("New_Start_Panel").gameObject.SetActive(false);
-
         Main_UI.transform.Find("Option_Window").gameObject.SetActive(true);
     }
     public void Close_Btn_Click()
