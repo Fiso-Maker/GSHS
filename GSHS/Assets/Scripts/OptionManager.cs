@@ -70,4 +70,18 @@ public class OptionManager : MonoBehaviour
         PlayerPrefs.SetFloat(Sound_Volume_Pref,SoundVolume);
     }
 
+    public void ToggleSoundMute(bool soundMute)
+    {
+        if(soundMute == true)
+        {
+            slider.value = 0f;
+            AudioVolumeChange(slider);
+        }
+        else
+        {
+            slider.value = PlayerPrefs.GetFloat(Sound_Volume_Pref);
+            AudioVolumeChange(slider);
+        }
+    }
+
 }
