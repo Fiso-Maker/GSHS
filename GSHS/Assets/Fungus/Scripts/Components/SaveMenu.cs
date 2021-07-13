@@ -138,6 +138,7 @@ namespace Fungus
                 loadButton.gameObject.SetActive(showSaveAndLoad);
                 rewindButton.gameObject.SetActive(showSaveAndLoad);
                 forwardButton.gameObject.SetActive(showSaveAndLoad);
+                restartButton.gameObject.SetActive(showSaveAndLoad);
             }
  
             if (showSaveAndLoad)
@@ -240,7 +241,7 @@ namespace Fungus
             else
             {
                 // Switch menu on
-                LeanTween.value(saveMenuGroup.gameObject, saveMenuGroup.alpha, 1f, 0.2f)
+                LeanTween.value(saveMenuGroup.gameObject, saveMenuGroup.alpha, 0.5f, 0.2f)
                     .setEase(LeanTweenType.easeOutQuint)
                     .setOnUpdate( (t) => {
                     saveMenuGroup.alpha = t;

@@ -48,12 +48,12 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Tests\Editor\FungusConversationParseTests.cs" />
+     <Compile Include="Assets\Tests\Editor\TestUtils.cs" />
+     <Compile Include="Assets\Tests\Editor\FungusPrioritySignalsTest.cs" />
      <Compile Include="Assets\Tests\Editor\TextTagParserTests.cs" />
      <Compile Include="Assets\Tests\Editor\FungusTextVariationSelectionTests.cs" />
-     <Compile Include="Assets\Tests\Editor\TestUtils.cs" />
      <Compile Include="Assets\Tests\Editor\GenerateEverythingMenuItem.cs" />
      <Compile Include="Assets\Tests\Editor\FungusCollectionTests.cs" />
-     <Compile Include="Assets\Tests\Editor\FungusPrioritySignalsTest.cs" />
      <None Include="Assets\Tests\Editor\FungusEditorTests.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>E:/Unity/Unity Editor/2020.2.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
