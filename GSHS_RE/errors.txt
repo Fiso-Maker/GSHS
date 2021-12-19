@@ -1,0 +1,18 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 594: expected ':' not found.
+    label 둘째날_교실
+                ^
+
+File "game/script.rpy", line 1391: expected ':' not found.
+    label 채나연_데이트
+                 ^
+
+File "game/script.rpy", line 1398: expected ':' not found.
+    label 미구현입니다
+                ^
+
+Ren'Py Version: Ren'Py 7.4.10.2178
+Tue Oct 26 12:49:35 2021
